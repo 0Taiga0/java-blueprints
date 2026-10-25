@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "seconds": 14.28,
+  "steps": [
+    {
+      "step": "Multipart import with BOM, CRLF, Cyrillic",
+      "revision": "5d12282b9b0d86f238a305b0f820e36adf97bf5469d0b20064f9bd093f32d925",
+      "blocks": 6
+    },
+    {
+      "step": "Original behavior",
+      "passed": 3
+    },
+    {
+      "step": "edit:{'replacement': 'total += 2;'}",
+      "revision": "6cf7f64baa97c748595ea89e9e8c150ab962ef61d722c0f2ed9d9c95e6d4e642",
+      "blocks": 6
+    },
+    {
+      "step": "insert:{'position': 'before', 'kind': 'condition', 'code': 'if (x > 0) {}'}",
+      "revision": "57c446269848cebb561f3ac212bbccca3a81819339895a9dc7b4cbce32bc090f",
+      "blocks": 7
+    },
+    {
+      "step": "insert:{'position': 'then-end', 'kind': 'loop', 'code': 'for (int i = 0; i < 2; i++) {}'}",
+      "revision": "56670b8841db781e86608c0f7224015344e8eceeb606f4090ae2a6775cea711b",
+      "blocks": 10
+    },
+    {
+      "step": "insert:{'position': 'body-start', 'kind': 'operation', 'code': 'total *= 2;'}",
+      "revision": "25a2bbcf86fd85e6194119a38b6aaf0335b4fb750bafe2f1b7f27dd6bd4bdb11",
+      "blocks": 11
+    },
+    {
+      "step": "move:{'targetNodeId': 'n3', 'position': 'then-start'}",
+      "revision": "ccc66eeb44ed2059bed89d2884525c05f423fda53a2d2c562db60da115b68953",
+      "blocks": 11
+    },
+    {
+      "step": "insert:{'position': 'before', 'kind': 'operation', 'code': 'total += 100;'}",
+      "revision": "4080752f392291b1f25c3ebd5edaaa49f30182d1fa86cbc1935fde0f39bb9361",
+      "blocks": 12
+    },
+    {
+      "step": "delete:{'mode': 'delete'}",
+      "revision": "ccc66eeb44ed2059bed89d2884525c05f423fda53a2d2c562db60da115b68953",
+      "blocks": 11
+    },
+    {
+      "step": "Nested graph changes behavior",
+      "passed": 4
+    },
+    {
+      "step": "Rejected stale/forged/invalid/unreachable/self-descendant requests",
+      "checks": 5
+    },
+    {
+      "step": "Exported file reimport",
+      "revision": "ccc66eeb44ed2059bed89d2884525c05f423fda53a2d2c562db60da115b68953",
+      "blocks": 11
+    },
+    {
+      "step": "Reimported behavior",
+      "passed": 4
+    },
+    {
+      "step": "delete:{'mode': 'keep-then'}",
+      "revision": "79e9d3e929ae0975b818ef06f392599fcb07887e389a52b152859494d5afdd63",
+      "blocks": 10
+    },
+    {
+      "step": "Keep then branch",
+      "passed": 3
+    },
+    {
+      "step": "delete:{'mode': 'keep-body'}",
+      "revision": "d4268e12da0702c80d4ea692db05d95d05574ed860d5fe48c365eeec6f146857",
+      "blocks": 7
+    },
+    {
+      "step": "Keep loop body once",
+      "passed": 3
+    }
+  ]
+}

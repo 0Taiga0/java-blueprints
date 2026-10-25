@@ -1,0 +1,9 @@
+.studio-graph-toolbar .graph-compilation { margin-left: auto; flex: 0 1 auto; }
+.graph-compilation { position: relative; font-size: 12px; color: #bfd4e5; }
+.graph-compilation summary { cursor: pointer; padding: 7px 10px; border: 1px solid #42637c; border-radius: 5px; }
+.graph-compilation.passed { color: #99e0ba; }
+.graph-compilation.failed { color: #ffd491; }
+.graph-compilation-details { position: absolute; z-index: 30; top: 100%; right: 0; width: min(520px, 90vw); max-height: min(340px, 65vh); overflow: auto; background: #172b3b; border: 1px solid #52748c; border-radius: 6px; padding: 14px; box-shadow: 0 10px 30px #0009; color: #d9e5ee; }
+.graph-compilation-details > div { padding: 8px 0; border-bottom: 1px solid #385164; display: grid; gap: 4px; overflow-wrap: anywhere; }
+.graph-compilation-details button { color: #9edaff; text-align: left; min-height: 32px; background: none; border: 0; text-decoration: underline; cursor: pointer; }
+.graph-compilation-details p { margin: 10px 0 0; color: #b0c7d8; }

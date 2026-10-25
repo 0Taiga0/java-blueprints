@@ -1,0 +1,358 @@
+{
+  "steps": [
+    "Imported variable: initial value 0 -> 1",
+    "Imported action: add amount - 1",
+    "Imported compound condition: >=11",
+    "Imported for header: equivalent bound, body retained",
+    "Imported call expression: swap Math.max arguments",
+    "Imported while header retains body",
+    "Imported do-while header retains body",
+    "Imported foreach header and scoped element",
+    "Create String variable with quoted Cyrillic text",
+    "Create byte variable from numeric control",
+    "Insert assignment action",
+    "Create conditional block",
+    "Insert action in true branch",
+    "Insert action in false branch",
+    "Create finite for loop",
+    "Insert action inside new for loop",
+    "Create own-method call with argument",
+    "Edit imported call arguments through fields"
+  ],
+  "rejections": [
+    {
+      "case": "Invalid variable identifier",
+      "message": "Имя должно быть допустимым именем Java: например count или totalPrice."
+    },
+    {
+      "case": "Duplicate local variable",
+      "message": "Имя «count» уже используется в этой области. Выберите другое."
+    },
+    {
+      "case": "Out-of-scope for counter",
+      "message": "Переменная «j» недоступна в этом месте. Выберите её из списка."
+    },
+    {
+      "case": "String used as number",
+      "message": "Ожидается int, а выбрано значение типа String."
+    },
+    {
+      "case": "Unlisted method",
+      "message": "Выберите метод из списка доступных вызовов."
+    },
+    {
+      "case": "Wrong method arguments",
+      "message": "Ожидается int, а выбрано значение типа String."
+    },
+    {
+      "case": "Stale revision",
+      "status": 409
+    }
+  ],
+  "import": {
+    "types": 1,
+    "methods": 7,
+    "constructors": 0,
+    "sourceLines": 57,
+    "generatedLines": 58,
+    "astNodes": 242
+  },
+  "originalTests": {
+    "status": "passed",
+    "message": "Все выполненные тесты прошли.",
+    "durationMs": 3385,
+    "diagnostics": [],
+    "tests": [
+      {
+        "name": "doWhileExecutesAtLeastOnce()",
+        "className": "VisualWorkshopTest",
+        "status": "passed",
+        "message": "",
+        "seconds": 0.044
+      },
+      {
+        "name": "whileChecksConditionBeforeBody()",
+        "className": "VisualWorkshopTest",
+        "status": "passed",
+        "message": "",
+        "seconds": 0.0
+      },
+      {
+        "name": "foreachKeepsOnlyPositiveValues()",
+        "className": "VisualWorkshopTest",
+        "status": "passed",
+        "message": "",
+        "seconds": 0.002
+      },
+      {
+        "name": "stringValuesPreserveCyrillic()",
+        "className": "VisualWorkshopTest",
+        "status": "passed",
+        "message": "",
+        "seconds": 0.004
+      },
+      {
+        "name": "ownMethodCanBeCalledWithAnArgument()",
+        "className": "VisualWorkshopTest",
+        "status": "passed",
+        "message": "",
+        "seconds": 0.003
+      },
+      {
+        "name": "calculateChecksBothBranchesAndBoundaries()",
+        "className": "VisualWorkshopTest",
+        "status": "passed",
+        "message": "",
+        "seconds": 0.0
+      }
+    ],
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "output": "\r\nTest run finished after 321 ms\r\n[         2 containers found      ]\r\n[         0 containers skipped    ]\r\n[         2 containers started    ]\r\n[         0 containers aborted    ]\r\n[         2 containers successful ]\r\n[         0 containers failed     ]\r\n[         6 tests found           ]\r\n[         0 tests skipped         ]\r\n[         6 tests started         ]\r\n[         0 tests aborted         ]\r\n[         6 tests successful      ]\r\n[         0 tests failed          ]\r\n\r\n",
+    "outputTruncated": false
+  },
+  "comparison": {
+    "status": "matched",
+    "message": "Обе версии прошли один и тот же набор тестов. Проверяемое этими тестами поведение сохранилось.",
+    "reasons": [],
+    "before": {
+      "status": "passed",
+      "message": "Все выполненные тесты прошли.",
+      "durationMs": 3027,
+      "diagnostics": [],
+      "tests": [
+        {
+          "name": "doWhileExecutesAtLeastOnce()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.033
+        },
+        {
+          "name": "whileChecksConditionBeforeBody()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        {
+          "name": "foreachKeepsOnlyPositiveValues()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        {
+          "name": "stringValuesPreserveCyrillic()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.003
+        },
+        {
+          "name": "ownMethodCanBeCalledWithAnArgument()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        {
+          "name": "calculateChecksBothBranchesAndBoundaries()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.005
+        }
+      ],
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "output": "\r\nTest run finished after 213 ms\r\n[         2 containers found      ]\r\n[         0 containers skipped    ]\r\n[         2 containers started    ]\r\n[         0 containers aborted    ]\r\n[         2 containers successful ]\r\n[         0 containers failed     ]\r\n[         6 tests found           ]\r\n[         0 tests skipped         ]\r\n[         6 tests started         ]\r\n[         0 tests aborted         ]\r\n[         6 tests successful      ]\r\n[         0 tests failed          ]\r\n\r\n",
+      "outputTruncated": false
+    },
+    "after": {
+      "status": "passed",
+      "message": "Все выполненные тесты прошли.",
+      "durationMs": 3207,
+      "diagnostics": [],
+      "tests": [
+        {
+          "name": "doWhileExecutesAtLeastOnce()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.045
+        },
+        {
+          "name": "whileChecksConditionBeforeBody()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        {
+          "name": "foreachKeepsOnlyPositiveValues()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        {
+          "name": "stringValuesPreserveCyrillic()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.002
+        },
+        {
+          "name": "ownMethodCanBeCalledWithAnArgument()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        {
+          "name": "calculateChecksBothBranchesAndBoundaries()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        }
+      ],
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "output": "\r\nTest run finished after 316 ms\r\n[         2 containers found      ]\r\n[         0 containers skipped    ]\r\n[         2 containers started    ]\r\n[         0 containers aborted    ]\r\n[         2 containers successful ]\r\n[         0 containers failed     ]\r\n[         6 tests found           ]\r\n[         0 tests skipped         ]\r\n[         6 tests started         ]\r\n[         0 tests aborted         ]\r\n[         6 tests successful      ]\r\n[         0 tests failed          ]\r\n\r\n",
+      "outputTruncated": false
+    },
+    "tests": [
+      {
+        "name": "doWhileExecutesAtLeastOnce()",
+        "className": "VisualWorkshopTest",
+        "change": "unchanged",
+        "before": {
+          "name": "doWhileExecutesAtLeastOnce()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.033
+        },
+        "after": {
+          "name": "doWhileExecutesAtLeastOnce()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.045
+        }
+      },
+      {
+        "name": "whileChecksConditionBeforeBody()",
+        "className": "VisualWorkshopTest",
+        "change": "unchanged",
+        "before": {
+          "name": "whileChecksConditionBeforeBody()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        "after": {
+          "name": "whileChecksConditionBeforeBody()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        }
+      },
+      {
+        "name": "foreachKeepsOnlyPositiveValues()",
+        "className": "VisualWorkshopTest",
+        "change": "unchanged",
+        "before": {
+          "name": "foreachKeepsOnlyPositiveValues()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        "after": {
+          "name": "foreachKeepsOnlyPositiveValues()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        }
+      },
+      {
+        "name": "stringValuesPreserveCyrillic()",
+        "className": "VisualWorkshopTest",
+        "change": "unchanged",
+        "before": {
+          "name": "stringValuesPreserveCyrillic()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.003
+        },
+        "after": {
+          "name": "stringValuesPreserveCyrillic()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.002
+        }
+      },
+      {
+        "name": "ownMethodCanBeCalledWithAnArgument()",
+        "className": "VisualWorkshopTest",
+        "change": "unchanged",
+        "before": {
+          "name": "ownMethodCanBeCalledWithAnArgument()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        },
+        "after": {
+          "name": "ownMethodCanBeCalledWithAnArgument()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        }
+      },
+      {
+        "name": "calculateChecksBothBranchesAndBoundaries()",
+        "className": "VisualWorkshopTest",
+        "change": "unchanged",
+        "before": {
+          "name": "calculateChecksBothBranchesAndBoundaries()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.005
+        },
+        "after": {
+          "name": "calculateChecksBothBranchesAndBoundaries()",
+          "className": "VisualWorkshopTest",
+          "status": "passed",
+          "message": "",
+          "seconds": 0.0
+        }
+      }
+    ],
+    "unchanged": 6,
+    "regressions": 0,
+    "fixed": 0,
+    "unresolved": 0
+  },
+  "finalStatistics": {
+    "types": 1,
+    "methods": 7,
+    "constructors": 0,
+    "sourceLines": 70,
+    "generatedLines": 70,
+    "astNodes": 305
+  }
+}

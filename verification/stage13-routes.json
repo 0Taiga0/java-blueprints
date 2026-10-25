@@ -1,0 +1,34 @@
+[
+  {
+    "file": "StoreMonolith.java",
+    "mode": "primary",
+    "nodes": 748,
+    "edges": 850,
+    "milliseconds": 394,
+    "collisions": []
+  },
+  {
+    "file": "StoreMonolith.java",
+    "mode": "full",
+    "nodes": 826,
+    "edges": 1437,
+    "milliseconds": 1910,
+    "collisions": []
+  },
+  {
+    "file": "VisualWorkshop.java",
+    "mode": "primary",
+    "nodes": 44,
+    "edges": 43,
+    "milliseconds": 28,
+    "collisions": []
+  },
+  {
+    "file": "VisualWorkshop.java",
+    "mode": "full",
+    "nodes": 51,
+    "edges": 73,
+    "milliseconds": 47,
+    "collisions": []
+  }
+]
